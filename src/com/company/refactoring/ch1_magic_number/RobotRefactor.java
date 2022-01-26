@@ -1,9 +1,9 @@
 package com.company.refactoring.ch1_magic_number;
 
 public class RobotRefactor {
-    public static final int COMMAND_WALK = 0;
-    public static final int COMMAND_STOP = 1;
-    public static final int COMMAND_JUMP = 2;
+    public static final RobotCommand COMMAND_WALK = new RobotCommand("WALK");
+    public static final RobotCommand COMMAND_STOP = new RobotCommand("STOP");
+    public static final RobotCommand COMMAND_JUMP = new RobotCommand("JUMP");
 
     private final String _name;
 
@@ -18,7 +18,7 @@ public class RobotRefactor {
      * 명령어 2 : 로봇이 점프합니다.
      */
 
-    public void order(int command) {
+    public void order(RobotCommand command) {
         if (command == COMMAND_WALK) {
             System.out.println(_name + " walks.");
         } else if (command == COMMAND_STOP) {
