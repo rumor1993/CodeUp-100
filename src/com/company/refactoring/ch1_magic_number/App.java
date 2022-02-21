@@ -10,8 +10,8 @@ public class App {
         System.out.println();
 
         RobotRefactor robotRefactor = new RobotRefactor("Andrew2");
-        robotRefactor.order(RobotRefactor.COMMAND_WALK);
-        robotRefactor.order(RobotRefactor.COMMAND_STOP);
-        robotRefactor.order(RobotRefactor.COMMAND_JUMP);
+        robotRefactor.order(RobotRefactor.Command.WALK);
+        robotRefactor.order(RobotRefactor.Command.STOP);
+        robotRefactor.order(RobotRefactor.Command.JUMP);
     }
 }

@@ -1,23 +1,14 @@
 package com.company.basic;
-import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
+        Robot punchRunRobot = new Robot("달리는펀치로봇", new PunchAttackStrategy(), new RunMoveStrategy());
+        punchRunRobot.attack();
+        punchRunRobot.move();
 
-        int[] result = new int[10];
-        char[] arrays = String.valueOf(a * b * c).toCharArray();
-
-        for (int i = 0; i < arrays.length; i++) {
-            result[arrays[i] - '0'] += 1;
-        }
-
-        for (int number : result) {
-            System.out.println(number);
-        }
+        Robot punchFlyRobot = new Robot("날아다니는펀치로봇", new PunchAttackStrategy(), new FlyMoveStrategy());
+        punchFlyRobot.attack();
+        punchFlyRobot.move();
     }
 }
 
