@@ -2,7 +2,7 @@ package com.company.basic;
 
 import java.util.Scanner;
 
-// 문자찾기
+// 대소문자 변환
 public class Case02 {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
