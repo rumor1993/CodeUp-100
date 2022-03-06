@@ -11,12 +11,10 @@ public class Case02 {
 
         char[] c = input1.toCharArray();
         for (char v : c) {
-            if (Character.isUpperCase(v)) answer += Character.toUpperCase(v);
-            else answer += Character.toLowerCase(v);
+            if (Character.isUpperCase(v)) answer += Character.toLowerCase(v);
+            else answer += Character.toUpperCase(v);
         }
 
         System.out.println(answer);
-        return ;
-
     }
 }

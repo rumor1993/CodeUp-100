@@ -9,33 +9,16 @@ public class Case07 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String str = bf.readLine();
-        String answer = "";
+        String answer = "NO";
 
-        for (int i = 0; i < str.length(); i++) {
-            if (str.indexOf(str.charAt(i)) == i) {
-                answer += str.charAt(i);
-            }
-        }
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(str);
+        stringBuilder.reverse();
 
-         System.out.println(answer);
-    }
+        String str1 = stringBuilder.toString().toLowerCase();
+        String str2 = str.toLowerCase();
 
-    //
-
-    public void legacyCode() throws IOException {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        String str = bf.readLine();
-        char[] chars = str.toCharArray();
-        String answer = "";
-
-        for (int i = 0; i < chars.length; i++) {
-            for (int j = 0; j < chars.length; j++) {
-                if (chars[i] == chars[j]) {
-                    if (!answer.contains(String.valueOf(chars[i]))) answer += chars[i];
-                }
-            }
-        }
-
+        if (str1.equals(str2)) answer = "YES";
         System.out.println(answer);
     }
 }
