@@ -1,10 +1,9 @@
-package com.company.basic;
+package com.company.string;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+
 // 단어 뒤집기
 // StringBuilder 이용하면 reverse() 함수용 사
 public class Case04 {

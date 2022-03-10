@@ -1,9 +1,8 @@
-package com.company.basic;
+package com.company.string;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 // 10. 가장 짧은 문자거리
 public class Case10_1 {
